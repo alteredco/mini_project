@@ -1,0 +1,13 @@
+@import "../../constants";
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5vh;
+  @include fade-in;
+}
+
+.logo {
+  height: 5vh;
+}

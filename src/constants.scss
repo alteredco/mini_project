@@ -71,37 +71,33 @@ $prefix: "-moz-", "-webkit-", "-o-", "-ms-", "";
 
 @keyframes slide-in {
   100% {
-    transform: translateX(-50%);
+    left: 0;
   }
 }
 @-moz-keyframes slide-in {
   100% {
-    transform: translateX(-50%);
+    transform: translateX(0px);
   }
 }
 @-webkit-keyframes slide-in {
   100% {
-    transform: translateX(-50%);
+    transform: translateX(0px);
   }
 }
 @-ms-keyframes slide-in {
   100% {
-    transform: translateX(-50%);
+    left: 0;
   }
 }
-@-o-keyframes fadein {
+@-o-keyframes slide-in {
   100% {
-    transform: translateX(-50%);
+    left: 0;
   }
 }
 
-@mixin slide {
-  position: absolute;
-  transform: translateX(200%);
-  -webkit-transform: translateX(200%);
-  -moz-transform: translateX(200%);
-  -ms-transform: translateX(200%);
-  -o-transform: translateX(200%);
+@mixin slide($leftVal) {
+  position: relative;
+  left: $leftVal;
   animation: slide-in 1s forwards;
   -webkit-animation: slide-in 1s forwards;
   -moz-animation: slide-in 1s forwards;
