@@ -1,0 +1,36 @@
+@import "./constants.scss";
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5vh;
+  @include fade-in;
+}
+
+img {
+  height: 5vh;
+}
+
+.App-header {
+  background-color: $backdropColor;
+  min-height: $pageHeight;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: $neutralColor;
+}
+
+.App-header main {
+  @include fade-in;
+}
+
+.App-header h1 {
+  @include slide;
+}
+
+.App-link {
+  color: $highlightColor;
+}

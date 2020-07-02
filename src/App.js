@@ -1,23 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Logo from './assets/blue_logo_pad.png';
+import './App.scss';
 
 function App() {
   return (
     <div className="App">
+    <nav>
+      <img src={Logo} alt="Swytch logo"/>
+    </nav>
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <main>
+        <h1>I am the landing page.</h1>
+      </main>
       </header>
     </div>
   );
