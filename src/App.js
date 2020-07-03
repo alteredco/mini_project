@@ -10,10 +10,8 @@ function App() {
   return (
     <div className="App">
       <Nav />
-      <header className="landing__header">
+      <div  className="landing__wrapper">
       <LandingImage />
-      </header>
-      <main className="landing__main">
       <RtButton width="90vw" height="auto" fontSize="42" />
         <h1>Universal eBike Conversion Kit</h1>
         <table>
@@ -31,7 +29,7 @@ function App() {
         fontSize="1.5em"
         amount = "100"
          />
-         </main>
+         </div>
     </div>
   );
 }

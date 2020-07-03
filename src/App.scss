@@ -1,23 +1,21 @@
 @import "./constants.scss";
 .App {
-  width: 100vw;
+  background-color: $neutralColor;
+  min-height: $pageHeight;
+  max-width: 100vw;
+  font-size: calc(10px + 1.75vmin);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-color: $neutralColor;
-  min-height: $pageHeight;
-  width: 100vw;
-  font-size: calc(10px + 1.75vmin);
-  color: $titleColor;
 }
 
-.landing__header {
+.landing__wrapper {
   @include fade-in;
-}
-
-.landing__main {
+  @include atMedium {
+    flex-direction: row;
+  }
   &h1 {
     @include fade-in;
   }

@@ -5,11 +5,25 @@
   @include atSmall {
     width: 100vw;
   }
+  @include atMedium {
+    display: flex;
+    flex-direction: row;
+    width: 50vw;
+  }
 }
 .landing__img {
-  display: inline-block;
-  vertical-align: bottom;
-  padding-top: 5vh;
-  margin-bottom: 0;
-  width: 100%;
+  @include atSmall {
+    display: inline-block;
+    vertical-align: bottom;
+    padding-top: 5vh;
+    margin-bottom: 0;
+    width: 100%;
+  }
+  @include atMedium {
+    display: flex;
+    width: 80%;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    padding-right: 3em;
+  }
 }

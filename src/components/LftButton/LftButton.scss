@@ -1,5 +1,10 @@
 @import "../../constants";
 
 .sideButton {
-  left: 0;
+  @include atSmall {
+    width: 100vw;
+  }
+  @include atMedium {
+    width: 20vw;
+  }
 }
