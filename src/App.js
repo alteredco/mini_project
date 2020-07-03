@@ -10,9 +10,7 @@ function App() {
     <div className="App">
       <Nav />
       <LandingImage />
-      <a href="">
       <RtButton width="575" height="85" fontSize="42" />
-      </a>
       <header className="landing__header">
         <h1>Universal eBike Conversion Kit</h1>
         <table>

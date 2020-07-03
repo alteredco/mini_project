@@ -2,8 +2,13 @@
 
 .landing__imgBox {
   background-color: $backdropColor;
+  @include atSmall {
+    width: 100vw;
+  }
 }
 .landing__img {
+  display: inline-block;
+  vertical-align: bottom;
   padding-top: 5vh;
   margin-bottom: 0;
   width: 100%;
