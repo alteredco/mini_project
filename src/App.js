@@ -2,6 +2,7 @@ import React from 'react';
 import Nav from './components/NavTop/NavTop';
 import LandingImage from './components/LandingImage/LandingImage';
 import RtButton from './components/RtButton/RtButton';
+import LftButton from './components/LftButton/LftButton';
 import './App.scss';
 import './index.css';
 
@@ -9,9 +10,11 @@ function App() {
   return (
     <div className="App">
       <Nav />
-      <LandingImage />
-      <RtButton width="575" height="85" fontSize="42" />
       <header className="landing__header">
+      <LandingImage />
+      </header>
+      <main className="landing__main">
+      <RtButton width="90vw" height="auto" fontSize="42" />
         <h1>Universal eBike Conversion Kit</h1>
         <table>
           <tr>
@@ -22,7 +25,13 @@ function App() {
         </table>
         <h2>Order today for 50% off price</h2>
         <h1>£399</h1>
-      </header>
+        <LftButton 
+        width="90vw" 
+        height="auto" 
+        fontSize="1.5em"
+        amount = "100"
+         />
+         </main>
     </div>
   );
 }

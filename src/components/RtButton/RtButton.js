@@ -3,13 +3,14 @@ import './RtButton.scss';
 
 const RtButton = (props) => {
   return (
-    <div className="sideBtn">
+    <div className="rtBtnWrapper">
      <svg
       xmlns="http://www.w3.org/2000/svg"
       width={props.width}
       height={props.height}
       fill="none"
       viewBox="0 0 622 100"
+      className="rtBtn"
     >
       <path
         fill="#FFBD37"

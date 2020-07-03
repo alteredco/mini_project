@@ -25,7 +25,7 @@ const LftButton=(props)=> {
           textAnchor="middle"
           dominantBaseline= "middle"
         >
-          PREORDER
+          Only {props.amount} left at this price!
         </text>
     </svg>
     </div>
