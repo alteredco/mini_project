@@ -1,14 +1,25 @@
 @import "../../constants";
-.rtBtnWrapper {
-  @include grow;
+.rtBtn__container {
+  right: 0;
   @include rightSlide;
   @include atSmall {
     position: absolute;
     width: 80vw;
-    right: 0;
   }
   @include atMedium {
-    width: 20vw;
-    right: 0;
+    max-width: 40vw;
+  }
+}
+
+.rtBtn__link {
+  text-transform: uppercase;
+  transition: all 0.2s;
+  & :visited {
+  }
+  & :hover {
+    transform: translateY(-3px);
+  }
+  & :active {
+    transform: translateY(-1);
   }
 }
