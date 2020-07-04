@@ -2,8 +2,8 @@
 
 nav {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  flex-direction: row;
   @include fade-in;
   @include atSmall {
     height: 5vh;
@@ -13,11 +13,18 @@ nav {
   }
 }
 
-.logo {
+.header--nav__logo {
+  align-items: center;
+  padding-left: 1em;
   @include atSmall {
     height: 5vh;
   }
   @include atMedium {
     height: 9vh;
   }
+}
+
+.header--nav__unit {
+  padding-left: 1em;
+  align-items: flex-end;
 }

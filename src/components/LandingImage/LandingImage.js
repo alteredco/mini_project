@@ -4,8 +4,8 @@ import './LandingImage.scss';
 
 const LandingImage = ()=> {
   return (
-      <div className="landing__imgBox">
-        <img src={MainImg} alt="Swytch ebike" className="landing__img" /> 
+      <div className="section--main__imgBox">
+        <img src={MainImg} alt="Swytch ebike" className="section--main__img" /> 
       </div>
   );
 }

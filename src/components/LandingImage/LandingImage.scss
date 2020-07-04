@@ -1,23 +1,23 @@
 @import "../../constants.scss";
 
-.landing__imgBox {
+.section--main__imgBox {
   background-color: $backdropColor;
+  position: relative;
   @include atSmall {
-    width: 100vw;
+    max-width: 100vw;
   }
   @include atMedium {
-    display: flex;
-    flex-direction: row;
-    width: 50vw;
+    max-width: 50vw;
   }
 }
-.landing__img {
+.section--main__img {
   @include atSmall {
     display: inline-block;
     vertical-align: bottom;
     padding-top: 5vh;
     margin-bottom: 0;
     width: 100%;
+    height: 80vh;
   }
   @include atMedium {
     display: flex;

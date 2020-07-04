@@ -5,7 +5,10 @@ import './NavTop.scss';
 const Nav = () => {
   return (
     <nav>
-      <img src={Logo} alt="Swytch logo" className="logo" />
+      <img src={Logo} alt="Swytch logo" className="header--nav__logo" />
+      <p className="header--nav__unit">
+        GB
+      </p>
     </nav>
   )
 }
