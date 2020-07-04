@@ -1,0 +1,28 @@
+@import "../../constants.scss";
+
+.footer--text__container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  background-color: $titleColor;
+  color: $neutralColor;
+  text-transform: uppercase;
+  @include fade-in;
+  @include atSmall {
+    height: 5vh;
+  }
+  @include atMedium {
+    height: 10vh;
+  }
+}
+
+.footer--text {
+  align-items: center;
+  padding-left: 1em;
+  @include atSmall {
+    height: 5vh;
+  }
+  @include atMedium {
+    height: 9vh;
+  }
+}

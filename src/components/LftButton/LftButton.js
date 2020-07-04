@@ -3,7 +3,7 @@ import './LftButton.scss';
 
 const LftButton=(props)=> {
   return (
-    <div className="sideButton">
+    <div className="lftButtonWrapper">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
@@ -23,7 +23,7 @@ const LftButton=(props)=> {
           textAnchor="middle"
           dominantBaseline= "middle"
         >
-          Only {props.amount} left at this price!
+        {props.amount} left at this price!
         </text>
     </svg>
     </div>

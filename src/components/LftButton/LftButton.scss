@@ -1,10 +1,15 @@
 @import "../../constants";
 
-.sideButton {
+.lftButtonWrapper {
+  @include grow;
   @include atSmall {
-    width: 100vw;
+    position: absolute;
+    width: 80vw;
+    left: 0;
   }
   @include atMedium {
+    position: relative;
     width: 20vw;
+    left: 0;
   }
 }

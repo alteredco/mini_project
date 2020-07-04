@@ -2,8 +2,10 @@ import React from 'react';
 import Nav from './components/NavTop/NavTop';
 import LandingImage from './components/LandingImage/LandingImage';
 import RtButton from './components/RtButton/RtButton';
-import LftButton from './components/LftButton/LftButton';
+import Footer from './components/Footer/Footer';
 import Form from './components/Form/Form';
+import {faCheckCircle} from "@fortawesome/free-regular-svg-icons";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import './App.scss';
 import './index.css';
 
@@ -28,9 +30,12 @@ function App() {
         <h1>Universal eBike Conversion Kit</h1>
         <table>
           <tr>
-            <td>• Rim AND Disc brake compatible</td>
-            <td>• 15 or 20 Mph Top Speed</td>
-            <td>• Up to 50km Range</td>
+            <td>
+            <FontAwesomeIcon icon={faCheckCircle}/> Rim AND Disc brake compatible</td>
+            <td>
+            <FontAwesomeIcon icon={faCheckCircle}/> 15 or 20 Mph Top Speed</td>
+            <td>
+            <FontAwesomeIcon icon={faCheckCircle}/> Up to 50km Range</td>
           </tr>
         </table>
         </div>
@@ -39,15 +44,12 @@ function App() {
         <h1>£399</h1>
         </div>
         <div className="item5">
-        <LftButton 
-        width="90vw" 
-        height="auto" 
-        fontSize="1.5em"
-        amount = "100"
-         />
          </div>
          </main>
-<Form />
+        <Form />
+        <footer>
+          <Footer amount="100"/>
+        </footer>
     </div>
   );
 }
