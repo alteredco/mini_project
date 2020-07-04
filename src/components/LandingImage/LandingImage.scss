@@ -1,14 +1,21 @@
 @import "../../constants.scss";
 
 .section--main__imgBox {
-  background-color: $backdropColor;
-  position: relative;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(78, 131, 255, 0.6),
+      rgba(110, 137, 199, 0.6)
+    ),
+    url("../../assets/universal-ebike-kit-1.jpg");
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 70vh, 0% 100%);
   @include atSmall {
+    height: 95vh;
     max-width: 100vw;
   }
   @include atMedium {
     max-width: 50vw;
-    min-height: 100vh;
+    min-height: 95vh;
     border-top-left-radius: 1em;
     border-top-right-radius: 1em;
   }

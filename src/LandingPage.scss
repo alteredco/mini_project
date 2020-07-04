@@ -1,0 +1,29 @@
+@import "./constants.scss";
+
+.main__container {
+  @include fade-in;
+  @include atMedium {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 1em;
+  }
+  &h1 {
+    @include fade-in;
+  }
+}
+
+.item1 {
+  @include atMedium {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 7;
+  }
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
