@@ -1,9 +1,13 @@
 @import "../../constants";
 .rtBtnWrapper {
+  @include grow;
   @include atSmall {
-    width: 100vw;
+    position: absolute;
+    width: 80vw;
+    right: 0;
   }
   @include atMedium {
     width: 20vw;
+    right: 0;
   }
 }

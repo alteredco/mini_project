@@ -5,8 +5,10 @@ const Form =()=>{
     <form action="" method="POST"> 
     <fieldset>
         <legend>Order Details</legend>
-        <label for="name">Name:</label> 
-        <input type="text" id="name" name="user_name" />
+        <label for="name">First Name:</label> 
+        <input type="text" id="firstName" name="first_name" />
+        <label for="name">Last Name:</label> 
+        <input type="text" id="lastName" name="last_name" />
         <label for="mail">Email:</label>
         <p className='is-hidden error'></p>
         <input type="email" id="mail" name="user_email" /> 
@@ -17,18 +19,12 @@ const Form =()=>{
         <select id="payment" name="user_payment">
           <option value="select_method">Select Payment Method</option>
           <option value="credit card">Credit Card</option>
-          <option value="paypal">PayPal</option>
-          <option value="bitcoin">Bitcoin</option>
         </select>
         <p className='is-hidden pay-msg'></p>
         <div id="credit-card" className="credit-card">
           <div>
             <label for="cc-num">Card Number:</label>
         	  <input id="cc-num" name="user_cc-num" type="text" />
-          </div>
-          <div>
-            <label for="zip">Zip Code:</label>
-            <input id="zip" name="user_zip" type="text" /> 
           </div>
           <div>
             <label for="cvv">CVV:</label>
@@ -56,14 +52,12 @@ const Form =()=>{
             <option value="2022">2022</option>
             <option value="2023">2023</option>
             <option value="2024">2024</option>  
-          </select> 	                  	         
-        </div>
-        <div id="paypal">
-        	<p>If you selected the PayPal option we'll take you to Paypal's site to set up your billing information, when you click “Register” below.</p>
-        </div> 
-        <div id="bitcoin">
-        	<p>If you selected the Bitcoin option we'll take you to the Coinbase site to set up your billing information. Due to the nature of exchanging Bitcoin, all Bitcoin transactions will be final.</p>
-        </div>                  
+          </select> 
+          <div>
+            <label for="cvv">Cardholder Name:</label>
+            <input id="cardholder" name="cardholder" type="text"/> 
+          </div>	                  	         
+        </div>          
       </fieldset>        
       <button type="submit">Pay Now</button>
     </form>

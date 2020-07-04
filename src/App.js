@@ -34,14 +34,18 @@ function App() {
           </tr>
         </table>
         </div>
+        <div className="item4">
         <h2>Order today for 50% off price</h2>
         <h1>£399</h1>
+        </div>
+        <div className="item5">
         <LftButton 
         width="90vw" 
         height="auto" 
         fontSize="1.5em"
         amount = "100"
          />
+         </div>
          </main>
 <Form />
     </div>
