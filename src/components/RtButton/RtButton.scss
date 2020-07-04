@@ -1,6 +1,7 @@
 @import "../../constants";
 .rtBtnWrapper {
   @include grow;
+  @include rightSlide;
   @include atSmall {
     position: absolute;
     width: 80vw;

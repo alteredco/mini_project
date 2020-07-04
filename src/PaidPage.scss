@@ -15,6 +15,7 @@
 
 .header--heading__primary {
   color: $neutralColor;
+  @include leftSlide;
 }
 
 .header--heading__primary-main {

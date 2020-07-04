@@ -19,6 +19,7 @@
 .footer--text {
   align-items: center;
   padding-left: 1em;
+  @include leftSlide;
   @include atSmall {
     height: 4vh;
     padding-bottom: 1em;
