@@ -17,6 +17,7 @@ nav {
 .header--nav__logo {
   align-items: center;
   padding-left: 1em;
+  max-width: 50vw;
   @include atSmall {
     height: 5vh;
   }
