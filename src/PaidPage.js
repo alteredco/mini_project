@@ -7,7 +7,10 @@ function PaidPage() {
     <div className="paid__container">
     <header className="header--paid__hero">
     <Nav />
-      Thank you for your purchase.
+    <h1 className="header--heading__primary">
+    <span className="header--heading__primary-main">Thank you </span>
+    <span className="header--heading__primary-sub">for your purchase!</span>
+    </h1>
     </header>
     </div>
   );

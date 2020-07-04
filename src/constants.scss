@@ -7,6 +7,9 @@ $hoverColor: #4e82ff;
 $pageHeight: 100vh;
 $mobileWidth: 100vw;
 $prefix: "-moz-", "-webkit-", "-o-", "-ms-", "";
+$bigFont: 2em;
+$medFont: 1em;
+$smallFont: 0.75em;
 
 //css animation mixins
 @keyframes fadein {

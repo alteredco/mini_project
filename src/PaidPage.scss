@@ -10,4 +10,34 @@
     url("./assets/regular-bike-riding.jpg");
   background-size: cover;
   clip-path: polygon(0 0, 100% 0, 100% 70vh, 0% 100%);
+  position: relative;
+}
+
+.header--heading__primary {
+  color: $neutralColor;
+}
+
+.header--heading__primary-main {
+  display: block;
+  text-transform: uppercase;
+  @include atSmall {
+    font-size: $medFont;
+    letter-spacing: 24px;
+  }
+  @include atMedium {
+    font-size: $bigFont;
+    letter-spacing: 32px;
+  }
+}
+
+.header--heading__primary-sub {
+  display: block;
+  @include atSmall {
+    font-size: $smallFont;
+    letter-spacing: 14px;
+  }
+  @include atMedium {
+    font-size: $medFont;
+    letter-spacing: 18px;
+  }
 }

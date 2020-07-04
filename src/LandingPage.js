@@ -6,6 +6,7 @@ import Footer from './components/Footer/Footer';
 import Form from './components/Form/Form';
 import {faCheckCircle} from "@fortawesome/free-regular-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import Headline from './components/Headline/Headline';
 
 function LandingPage() {
   return(
@@ -25,7 +26,7 @@ function LandingPage() {
        />
       </div>
         <div className="item3">
-        <h1>Universal eBike Conversion Kit</h1>
+        <Headline />
         <table>
           <tr>
             <td>
