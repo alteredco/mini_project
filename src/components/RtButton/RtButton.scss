@@ -8,6 +8,7 @@
     width: 80vw;
   }
   @include atMedium {
+    position: relative;
     max-width: 40vw;
   }
 }
@@ -20,11 +21,5 @@
   }
   & :active {
     transform: translateY(0);
-  }
-}
-
-svg text {
-  & :hover {
-    font-size: 2em;
   }
 }

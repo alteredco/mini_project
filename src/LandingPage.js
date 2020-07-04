@@ -14,11 +14,12 @@ function LandingPage() {
     <header className="header--nav__container">
       <Nav />
       </header>
-      <main className="main__contairow">
-      <div className="item1 col-1-of-2">
+      <main className="main__container row">
+      <div className="col-1-of-2">
       <LandingImage />
       </div>
-      <div className="item2">
+      <div className="col-1-of-2">
+      <div>
       <RtButton 
       width="90vw" 
       height="auto" 
@@ -43,6 +44,7 @@ function LandingPage() {
         <h1>£399</h1>
         </div>
         <div className="item5">
+         </div>
          </div>
          </main>
         <footer>

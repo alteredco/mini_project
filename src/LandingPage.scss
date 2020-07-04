@@ -2,34 +2,10 @@
 
 .main__container {
   @include fade-in;
-  @include atMedium {
-    display: grid;
-    grid-template-columns: 50% auto auto;
-    grid-gap: 1em;
-  }
   &h1 {
     @include fade-in;
     color: $titleColor;
   }
-}
-
-.item1 {
-  @include atMedium {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 7;
-  }
-}
-
-.item2 {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 2;
-}
-
-.item3 {
 }
 
 footer {
