@@ -8,6 +8,7 @@
   }
   @include atMedium {
     max-width: 50vw;
+    min-height: 100vh;
     border-top-left-radius: 1em;
     border-top-right-radius: 1em;
   }
@@ -28,7 +29,7 @@
     padding-top: 3em;
     padding-bottom: 3em;
     padding-right: 3em;
-    border-top-right-radius: 1em;
-    border-bottom-right-radius: 1em;
+    border-top-right-radius: 4em;
+    border-bottom-right-radius: 4em;
   }
 }

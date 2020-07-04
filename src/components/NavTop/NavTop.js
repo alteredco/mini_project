@@ -7,7 +7,7 @@ const Nav = () => {
     <nav>
       <img src={Logo} alt="Swytch logo" className="header--nav__logo" />
       <p className="header--nav__unit">
-        GB
+        GB  
       </p>
     </nav>
   )

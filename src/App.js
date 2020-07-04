@@ -46,7 +46,6 @@ function App() {
         <div className="item5">
          </div>
          </main>
-        <Form />
         <footer>
           <Footer amount="100"/>
         </footer>
