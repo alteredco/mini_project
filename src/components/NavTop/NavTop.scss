@@ -4,6 +4,7 @@ nav {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  background-color: $neutralColor;
   @include fade-in;
   @include atSmall {
     height: 5vh;
@@ -25,6 +26,7 @@ nav {
 }
 
 .header--nav__unit {
-  padding-left: 1em;
-  align-items: flex-end;
+  margin-right: 1em;
+  align-items: right;
+  font-weight: bold;
 }
