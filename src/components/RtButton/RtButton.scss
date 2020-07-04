@@ -2,6 +2,7 @@
 .rtBtn__container {
   right: 0;
   @include rightSlide;
+  @include grow;
   @include atSmall {
     position: absolute;
     width: 80vw;
@@ -14,12 +15,16 @@
 .rtBtn__link {
   text-transform: uppercase;
   transition: all 0.2s;
-  & :visited {
-  }
   & :hover {
     transform: translateY(-3px);
   }
   & :active {
-    transform: translateY(-1);
+    transform: translateY(0);
+  }
+}
+
+svg text {
+  & :hover {
+    font-size: 2em;
   }
 }

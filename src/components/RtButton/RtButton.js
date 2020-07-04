@@ -21,7 +21,8 @@ const RtButton = (props) => {
           x="40%" 
           y="50%"
           fontSize={props.fontSize}
-          fill="#000"
+          fontWeight="bold"
+          fill="#171938"
           textAnchor="middle"
           dominantBaseline= "middle"
         >

@@ -1,5 +1,13 @@
-//css animation mixins
+//layout mixins
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
 
+//css animation mixins
 /*fade animation*/
 @keyframes fadein {
   from {

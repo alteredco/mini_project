@@ -8,7 +8,29 @@ $hoverColor: #4e82ff;
 
 $pageHeight: 100vh;
 $mobileWidth: 100vw;
-$prefix: "-moz-", "-webkit-", "-o-", "-ms-", "";
+
+$gridWidth: 90vw;
+$gutterVertical: 2em;
+$gutterHorizontal: 2em;
+
 $bigFont: 2em;
 $medFont: 1em;
 $smallFont: 0.75em;
+
+.row {
+  max-width: $gridWidth;
+  margin: 0 auto;
+  &:not(:last-child) {
+    margin-bottom: $gutterVertical;
+  }
+
+  @include clearfix;
+
+  .col-1-of-2 {
+    width: calc((100% - #{$gutterHorizontal}) / 2);
+    background-color: orangered;
+    &:not(:last-child) {
+      margin-right: $gutterHorizontal;
+    }
+  }
+}

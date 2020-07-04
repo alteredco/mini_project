@@ -14,8 +14,8 @@ function LandingPage() {
     <header className="header--nav__container">
       <Nav />
       </header>
-      <main className="main__container">
-      <div className="item1">
+      <main className="main__contairow">
+      <div className="item1 col-1-of-2">
       <LandingImage />
       </div>
       <div className="item2">
