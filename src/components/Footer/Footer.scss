@@ -21,6 +21,7 @@
   padding-left: 1em;
   @include atSmall {
     height: 4vh;
+    padding-bottom: 1em;
   }
   @include atMedium {
     height: 9vh;
