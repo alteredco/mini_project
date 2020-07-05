@@ -17,3 +17,7 @@
   transition: max-height 0.6s ease-in;
   max-height: 0;
 }
+
+.accordion__btn {
+  outline: $highlightColor;
+}
