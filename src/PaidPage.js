@@ -1,6 +1,9 @@
 import React from 'react';
 import './PaidPage.scss';
 import Nav from './components/NavTop/NavTop';
+import FbIcon from './components/SocialIcons/FbIcon';
+import TwIcon from './components/SocialIcons/TwIcon';
+import IgIcon from './components/SocialIcons/IgIcon';
 
 function PaidPage() {
   return(
@@ -12,6 +15,14 @@ function PaidPage() {
     <span className="header--heading__primary-sub">for your purchase!</span>
     </h1>
     </header>
+    <section className="social__container">
+    <FbIcon 
+    />
+    <TwIcon 
+    />
+    <IgIcon 
+    />
+    </section>
     </div>
   );
 }

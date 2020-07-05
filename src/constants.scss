@@ -35,5 +35,9 @@ $smallFont: 0.75em;
         margin-right: $gutterHorizontal;
       }
     }
+
+    .col-1-of-1 {
+      width: calc(2 * (50vw - #{$gutterHorizontal}));
+    }
   }
 }

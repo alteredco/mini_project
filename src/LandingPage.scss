@@ -8,6 +8,12 @@
   }
 }
 
+.main--purchase__container {
+  &h1 {
+    color: $titleColor;
+  }
+}
+
 footer {
   position: fixed;
   bottom: 0;

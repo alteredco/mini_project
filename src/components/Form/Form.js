@@ -10,7 +10,6 @@ const Form =()=>{
         <legend>Order Details</legend>
         <label for="name">First Name:</label> 
         <input type="text" id="firstName" name="first_name" 
-        autoFocus
         />
         <label for="name">Last Name:</label> 
         <input type="text" id="lastName" name="last_name" />

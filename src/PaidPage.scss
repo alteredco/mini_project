@@ -1,7 +1,7 @@
 @import "./constants";
 
 .header--paid__hero {
-  height: 95vh;
+  height: 85vh;
   background-image: linear-gradient(
       to right bottom,
       rgba(78, 131, 255, 0.6),
@@ -41,4 +41,8 @@
     font-size: $medFont;
     letter-spacing: 18px;
   }
+}
+
+.social__container {
+  display: inline-block;
 }

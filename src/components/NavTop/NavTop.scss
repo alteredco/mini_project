@@ -18,6 +18,7 @@ nav {
   align-items: center;
   padding-left: 1em;
   max-width: 50vw;
+  margin-top: 0.25vh;
   @include atSmall {
     height: 5vh;
   }
@@ -30,5 +31,6 @@ nav {
   margin-right: 1em;
   align-items: right;
   font-weight: bold;
+  margin-top: 0.5vh;
   color: $titleColor;
 }

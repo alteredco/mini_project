@@ -30,14 +30,15 @@ function LandingPage() {
       </div>
         <div className="item3">
         <Headline />
-        <Iframe url="https://www.youtube.com/embed/KEgxcv-NAzY" /> 
+        <Iframe url="https://www.youtube.com/embed/KEgxcv-NAzY" 
+        /> 
         <MainText />
         </div>
-        <div className="col-1-of-1">
+        <section className="main--purchase__container">
         <h2>Order today for 50% off price</h2>
         <h1>£399</h1>
         <Countdown endDate="2020-08-01" />
-        </div>
+        </section>
         <div className="item5" id="scrollTarget">
         <Accordion title=" PAYMENT "
          />
