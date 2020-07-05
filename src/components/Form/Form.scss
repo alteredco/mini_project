@@ -81,25 +81,12 @@ button {
 }
 
 button:hover {
-  @include grow;
+  @include grow(1.1);
 }
-
-/* ================================= 
-  Page Styles
-==================================== */
 
 .container {
   margin: auto;
-  max-width: 680px;
-}
-
-.shirt div {
-  float: left;
-  margin-right: 0.85em;
-}
-
-.interests input {
-  margin-bottom: 0;
+  max-width: 100vw;
 }
 
 .credit-card {
@@ -110,17 +97,8 @@ button:hover {
   color: #ad2d0d;
 }
 
-/* ================================= 
-  Helper Classes
-==================================== */
 .select-msg {
   color: #34587c;
-}
-
-.total-calc {
-  color: #1a3652;
-  font-size: 1.25em;
-  padding: 0.2em;
 }
 
 .is-hidden {

@@ -1,0 +1,10 @@
+@import "../../constants.scss";
+
+.iframe__container {
+  @include atSmall {
+    max-width: 95vw;
+  }
+  @include atMedium {
+    max-width: 45vw;
+  }
+}

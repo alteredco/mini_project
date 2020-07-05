@@ -1,7 +1,6 @@
 import React from 'react';
 import MainImg from '../../assets/universal-ebike-kit-1.jpg';
 import './LandingImage.scss';
-import Headline from '../Headline/Headline';
 
 const LandingImage = ()=> {
   return (

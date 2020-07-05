@@ -2,11 +2,12 @@ import React from 'react';
 import Nav from './components/NavTop/NavTop';
 import LandingImage from './components/LandingImage/LandingImage';
 import RtButton from './components/RtButton/RtButton';
-import Footer from './components/Footer/Footer';
+import Headline from './components/Headline/Headline';
+import Iframe from './components/Iframe/Iframe';
 import Accordion from './components/Accordion/Accordion';
 import {faCheckCircle} from "@fortawesome/free-regular-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import Headline from './components/Headline/Headline';
+import Footer from './components/Footer/Footer';
 
 function LandingPage() {
   return(
@@ -28,6 +29,7 @@ function LandingPage() {
       </div>
         <div className="item3">
         <Headline />
+        <Iframe url="https://youtu.be/RGCNW2KOtIE" />
         <table>
           <tr>
             <td>

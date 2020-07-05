@@ -63,11 +63,17 @@
 }
 
 /*grow animation*/
-@mixin grow {
+@mixin grow($scale) {
   transition: all 0.2s ease-in-out;
   &:hover {
-    transform: scale(1.1);
+    transform: scale($scale);
   }
+}
+
+/*rotate animation*/
+@mixin rotate($deg) {
+  transition: transform 0.6s ease-in;
+  transform: rotate($deg);
 }
 
 /*slide from left animation*/

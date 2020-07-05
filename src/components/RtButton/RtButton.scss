@@ -13,7 +13,7 @@
 .rtBtn__container {
   right: 0;
   @include rightSlide;
-  @include grow;
+  @include grow(1.1);
   @include atSmall {
     position: absolute;
     width: 80vw;

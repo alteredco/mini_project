@@ -1,0 +1,19 @@
+@import "../../constants.scss";
+
+.accordion__container {
+  &:hover,
+  &:active {
+    @include grow(1.01);
+  }
+}
+
+.accordion__icon {
+  margin-left: auto;
+  @include rotate(90deg);
+}
+
+.accordion__content {
+  overflow: hidden;
+  transition: max-height 0.6s ease-in;
+  max-height: 0;
+}
