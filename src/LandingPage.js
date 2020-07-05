@@ -16,33 +16,33 @@ function LandingPage() {
     <header className="header--nav__container">
       <Nav />
       </header>
-      <main className="main__container row">
+      <main className="main__container">
+      <section className = "row">
       <div className="col-1-of-2">
       <LandingImage />
       </div>
       <div className="col-1-of-2">
-      <div>
       <RtButton 
       width="90vw" 
       height="auto" 
       fontSize="42"
        />
-      </div>
         <div className="item3">
         <Headline />
         <Iframe url="https://www.youtube.com/embed/KEgxcv-NAzY" 
         /> 
-        <MainText />
         </div>
+        </div>
+        </section>
         <section className="main--purchase__container">
+        <MainText />
         <h2>Order today for 50% off price</h2>
         <h1>£399</h1>
         <Countdown endDate="2020-08-01" />
         </section>
-        <div className="item5" id="scrollTarget">
+        <div className="main--payment__container" id="scrollTarget">
         <Accordion title=" PAYMENT "
          />
-         </div>
          </div>
          </main>
         <footer>
