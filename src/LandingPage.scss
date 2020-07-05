@@ -3,15 +3,24 @@
 .main__container {
   @include fade-in;
   &h1 {
-    @include fade-in;
     color: $titleColor;
   }
 }
 
 .main--purchase__container {
   margin: 1em;
-  &h1 {
-    color: $titleColor;
+}
+
+.main--purchase__title {
+  color: $titleColor;
+}
+
+.main--gallery__container {
+  @include atSmall {
+    margin-bottom: 4vh;
+  }
+  @include atMedium {
+    margin-bottom: 9vh;
   }
 }
 

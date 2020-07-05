@@ -29,10 +29,4 @@
   text-decoration: none;
   text-transform: uppercase;
   transition: all 0.2s;
-  & :hover {
-    transform: translateY(-3px);
-  }
-  & :active {
-    transform: translateY(0);
-  }
 }

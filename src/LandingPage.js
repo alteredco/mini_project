@@ -8,7 +8,8 @@ import MainText from './components/MainText/MainText';
 import Accordion from './components/Accordion/Accordion';
 import Footer from './components/Footer/Footer';
 import Countdown from './components/Countdown/Countdown';
-import './LandingPage';
+import KitImg from './assets/kit_1.jpg';
+import './LandingPage.scss';
 
 function LandingPage() {
   return(
@@ -17,7 +18,7 @@ function LandingPage() {
       <Nav />
       </header>
       <main className="main__container">
-      <section className = "row">
+      <section className = "main--feature__container row">
       <div className="col-1-of-2">
       <LandingImage />
       </div>
@@ -27,10 +28,9 @@ function LandingPage() {
       height="auto" 
       fontSize="42"
        />
-        <div className="item3">
+        <div className="main--headline__container">
         <Headline />
-        <Iframe url="https://www.youtube.com/embed/KEgxcv-NAzY" 
-        /> 
+        <img src={KitImg} alt="swytch conversion kit"/>
         </div>
         </div>
         </section>
@@ -40,10 +40,18 @@ function LandingPage() {
         <h1>£399</h1>
         <Countdown endDate="2020-08-01" />
         </section>
-        <div className="main--payment__container" id="scrollTarget">
+        <section className="main--payment__container" id="scrollTarget">
         <Accordion title=" PAYMENT "
          />
-         </div>
+         </section>
+         <section className="main--gallery__container row">
+           <div className="col-1-of-2">
+            <Iframe url="https://www.youtube.com/embed/KEgxcv-NAzY"></Iframe>
+           </div>
+           <div className="col-1-of-2">
+           <Iframe url="https://www.youtube.com/embed/RGCNW2KOtIE"></Iframe>
+           </div>
+         </section>
          </main>
         <footer>
           <Footer amount="100"/>

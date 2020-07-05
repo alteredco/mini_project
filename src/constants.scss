@@ -36,8 +36,16 @@ $smallFont: 0.75em;
       }
     }
 
-    .col-1-of-1 {
-      width: calc(2 * (50vw - #{$gutterHorizontal}));
+    .col-1-of-3 {
+      width: calc((100%-2 * #{$gutterHorizontal}) / 3);
+      &:not(:last-child) {
+        margin-right: $gutterHorizontal;
+      }
+      @include atSmall {
+        &:not(:last-child) {
+          margin-bottom: $gutterVertical;
+        }
+      }
     }
   }
 }

@@ -9,8 +9,7 @@ const Countdown = (props) => {
       totalTime = {
         days: Math.floor(timeLeft/(1000 * 60 * 60 * 24)),
         hours: Math.floor((timeLeft/(1000 * 60 * 60)) % 24),
-        minutes: Math.floor((timeLeft / 1000/60) % 60),
-        seconds: Math.floor((timeLeft/1000)%60)
+        minutes: Math.floor((timeLeft / 1000/60) % 60)
       };
     }
     return totalTime;
