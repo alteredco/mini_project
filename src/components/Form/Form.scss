@@ -59,11 +59,10 @@ input {
   border: 2px solid $hoverColor;
   border-radius: 0.5em;
   outline: none;
-}
-
-input:focus {
-  border-color: $highlightColor;
-  transition: border-color 0.4s, background-color 0.4s;
+  &:focus {
+    border-color: $highlightColor;
+    transition: border-color 0.4s, background-color 0.4s;
+  }
 }
 
 input[type="checkbox"],
@@ -78,10 +77,9 @@ button {
   border-radius: 0.5em;
   margin: 1.25em 0 0.5em;
   cursor: pointer;
-}
-
-button:hover {
-  @include grow(1.1);
+  &:hover {
+    @include grow(1.1);
+  }
 }
 
 .container {
@@ -99,14 +97,4 @@ button:hover {
 
 .select-msg {
   color: #34587c;
-}
-
-.is-hidden {
-  display: none;
-}
-
-.clearfix::after {
-  content: " ";
-  display: table;
-  clear: both;
 }

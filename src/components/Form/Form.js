@@ -9,7 +9,9 @@ const Form =()=>{
     <fieldset>
         <legend>Order Details</legend>
         <label for="name">First Name:</label> 
-        <input type="text" id="firstName" name="first_name" />
+        <input type="text" id="firstName" name="first_name" 
+        autoFocus
+        />
         <label for="name">Last Name:</label> 
         <input type="text" id="lastName" name="last_name" />
         <label for="mail">Email:</label>
@@ -18,12 +20,6 @@ const Form =()=>{
     </fieldset>
       <fieldset>
         <legend>Payment Info</legend>
-        <label for="payment">I'm going to pay with:</label>
-        <select id="payment" name="user_payment">
-          <option value="select_method">Select Payment Method</option>
-          <option value="credit card">Credit Card</option>
-        </select>
-        <p className='is-hidden pay-msg'></p>
         <div id="credit-card" className="credit-card">
           <div>
             <label for="cc-num">Card Number:</label>

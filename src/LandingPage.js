@@ -7,8 +7,10 @@ import Iframe from './components/Iframe/Iframe';
 import MainText from './components/MainText/MainText';
 import Accordion from './components/Accordion/Accordion';
 import Footer from './components/Footer/Footer';
+import Countdown from './components/Countdown/Countdown';
 
 function LandingPage() {
+
   return(
     <div className="landing__container">
     <header className="header--nav__container">
@@ -31,12 +33,14 @@ function LandingPage() {
         <Iframe url="https://www.youtube.com/embed/KEgxcv-NAzY" /> 
         <MainText />
         </div>
-        <div className="item4">
+        <div className="col-1-of-1">
         <h2>Order today for 50% off price</h2>
+        <Countdown endDate="2020-08-01" />
         <h1>£399</h1>
         </div>
-        <div className="item5">
-        <Accordion title=" PAYMENT " />
+        <div className="item5" id="scrollTarget">
+        <Accordion title=" PAYMENT "
+         />
          </div>
          </div>
          </main>

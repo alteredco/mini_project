@@ -11,7 +11,7 @@ const Chevron = (props) => {
     className={props.className} 
     height={props.height} 
     width={props.width} 
-    fill={props.fill}/>
+    />
     </div>
   );
 }

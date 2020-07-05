@@ -1,14 +1,11 @@
 @import "../../constants.scss";
 
-.accordion__container {
-  &:hover,
-  &:active {
-    @include grow(1.01);
-  }
-}
-
 .accordion__icon {
   margin-left: auto;
+  transition: transform 0.2s ease-in;
+}
+
+.rotate {
   @include rotate(90deg);
 }
 
@@ -20,4 +17,5 @@
 
 .accordion__btn {
   outline: $highlightColor;
+  margin-bottom: 1em;
 }

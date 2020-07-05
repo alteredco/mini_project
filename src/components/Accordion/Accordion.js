@@ -6,14 +6,15 @@ import Form from '../Form/Form';
 const Accordion = (props) => {
 
   const [active, setActive] = useState("");
-
-  const[ height, setHeight] = useState("0px");
+  const [ height, setHeight] = useState("0px");
+const [rotate, setRotate] = useState("accordion__icon");
 
   const content = useRef(null);
 
   function toggleActive() {
     setActive(active === ""? "active": "");
     setHeight(active === "active" ?  "0px": `${content.current.scrollHeight}px`)
+    setRotate(active==="active"? "accordion__icon": "accordion__icon rotate")
   }
 
   return (
@@ -22,7 +23,10 @@ const Accordion = (props) => {
         <p className="accordion__title">
           {props.title}
         </p>
-        <Chevron width={10} fill={"#fefefe"} />
+        <Chevron 
+        className={`${rotate}`}
+        width={10}  
+        />
       </button>
       <div ref={content} style={{maxHeight: `${height}`}} className="accordion__content">
         <Form />
