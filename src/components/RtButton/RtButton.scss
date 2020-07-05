@@ -1,4 +1,12 @@
 @import "../../constants";
+.rtBtn__positioner {
+  @include atSmall {
+    position: relative;
+    width: 100vw;
+    height: 5vh;
+  }
+}
+
 .rtBtn__container {
   right: 0;
   @include rightSlide;
@@ -14,6 +22,7 @@
 }
 
 .rtBtn__link {
+  text-decoration: none;
   text-transform: uppercase;
   transition: all 0.2s;
   & :hover {

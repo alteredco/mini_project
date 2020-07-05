@@ -1,5 +1,9 @@
 @import "../../constants";
 
+.headline__container {
+  position: relative;
+}
+
 .headline__title {
   color: $titleColor;
 }

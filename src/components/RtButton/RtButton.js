@@ -3,7 +3,7 @@ import './RtButton.scss';
 
 const RtButton = (props) => {
   return (
-    <div className="rtBtn__container">
+    <div className="rtBtn__positioner"><div className="rtBtn__container">
      <a href="#" className="rtBtn__link">
      <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -30,6 +30,7 @@ const RtButton = (props) => {
         </text>
     </svg>
     </a>
+    </div>
     </div>
   );
 }
