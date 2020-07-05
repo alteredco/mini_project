@@ -21,17 +21,17 @@
   }
 }
 .section--main__img {
+  width: 95%;
   @include atSmall {
     display: inline-block;
     vertical-align: bottom;
     padding-top: 5vh;
     margin-bottom: 0;
-    width: $mobileWidth;
     height: auto;
+    border-radius: 5%;
   }
   @include atMedium {
     display: flex;
-    width: 95%;
     height: auto;
     padding-top: 3em;
     padding-bottom: 3em;
