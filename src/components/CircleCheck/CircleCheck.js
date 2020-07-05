@@ -6,7 +6,9 @@ import './CircleCheck.scss';
 const CircleCheck = () => {
   return (
     <div className="icon__container">
-    <FontAwesomeIcon icon={faCheckCircle}/>
+    <FontAwesomeIcon icon={faCheckCircle}
+      style={{color:"#8192ba"}}
+    />
     </div>
   );
 }

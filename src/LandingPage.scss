@@ -2,14 +2,15 @@
 
 .main__container {
   @include fade-in;
-  &h1 {
+  h1 {
     @include fade-in;
     color: $titleColor;
   }
 }
 
 .main--purchase__container {
-  &h1 {
+  margin: 1em;
+  h1 {
     color: $titleColor;
   }
 }

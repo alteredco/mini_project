@@ -8,9 +8,9 @@ import MainText from './components/MainText/MainText';
 import Accordion from './components/Accordion/Accordion';
 import Footer from './components/Footer/Footer';
 import Countdown from './components/Countdown/Countdown';
+import './LandingPage';
 
 function LandingPage() {
-
   return(
     <div className="landing__container">
     <header className="header--nav__container">

@@ -22,9 +22,11 @@
   @include leftSlide;
   @include atSmall {
     height: 4vh;
-    padding-bottom: 1em;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
   }
   @include atMedium {
     height: 9vh;
+    padding-top: 2vh;
   }
 }
