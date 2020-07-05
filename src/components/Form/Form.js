@@ -1,35 +1,53 @@
 import React from 'react';
+import { useForm } from 'react-hook-form';
 import { Link } from 'react-router-dom';
 import './Form.scss';
 
 const Form =()=>{
+  const { handleSubmit, register} = useForm();
+  const onSubmit = data => console.log(data);
 
   return (
-    <form action="" method="POST"> 
+    <form action="" method="POST" onSubmit={handleSubmit(onSubmit)}> 
     <fieldset>
         <legend>Order Details</legend>
         <label for="name">First Name:</label> 
-        <input type="text" id="firstName" name="first_name" 
+        <input type="text" id="firstName" 
+        name="first_name" 
+        ref={register({required:true, pattern: /^[A-Za-z]+$/i})} 
         />
         <label for="name">Last Name:</label> 
-        <input type="text" id="lastName" name="last_name" />
+        <input type="text" 
+        id="lastName" 
+        name="last_name"
+        ref={register({required:true, pattern: /^[A-Za-z]+$/i})} />
         <label for="mail">Email:</label>
         <p className='is-hidden error'></p>
-        <input type="email" id="mail" name="user_email" /> 
+        <input type="email" 
+        id="mail" 
+        name="user_email" 
+        ref={register({required:true})}
+        /> 
     </fieldset>
       <fieldset>
         <legend>Payment Info</legend>
         <div id="credit-card" className="credit-card">
           <div>
             <label for="cc-num">Card Number:</label>
-        	  <input id="cc-num" name="user_cc-num" type="text" />
+        	  <input id="cc-num" name="user_cc-num" type="text" 
+            ref={register({required:true})}
+            />
           </div>
           <div>
             <label for="cvv">CVV:</label>
-            <input id="cvv" name="user_cvv" type="text"/> 
+            <input id="cvv" name="user_cvv" 
+            type="text"
+            ref={register({required:true})}
+            /> 
           </div>
           <label for="exp-month">Expiration Date:</label>
-          <select id="exp-month" name="user_exp-month">
+          <select id="exp-month" name="user_exp-month"
+          ref={register({required:true})}>
             <option value="1">1 - January</option>
             <option value="2">2 - February</option>
             <option value="3">3 - March</option>
@@ -44,7 +62,8 @@ const Form =()=>{
             <option value="12">12 - December</option>                
           </select>
           <label for="exp-year">Expiration Year:</label>
-          <select id="exp-year" name="user_exp-year">
+          <select id="exp-year" name="user_exp-year"
+          ref={register({required:true})}>
             <option value="2020">2020</option>
             <option value="2021">2021</option>
             <option value="2022">2022</option>
@@ -53,7 +72,10 @@ const Form =()=>{
           </select> 
           <div>
             <label for="cvv">Cardholder Name:</label>
-            <input id="cardholder" name="cardholder" type="text"/> 
+            <input id="cardholder" name="cardholder" 
+            type="text"
+            ref={register({required:true, pattern: /^[A-Za-z]+$/i})}
+            /> 
           </div>	                       
         </div>          
       </fieldset>        
