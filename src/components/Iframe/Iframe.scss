@@ -1,6 +1,7 @@
 @import "../../constants.scss";
 
 .iframe__container {
+  padding: 1em;
   @include atSmall {
     max-width: 95vw;
   }

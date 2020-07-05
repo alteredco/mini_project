@@ -1,5 +1,6 @@
 import React from 'react';
 import './Accordion.scss';
+import Chevron from  '../Chevron/Chevron';
 import Form from '../Form/Form';
 
 const Accordion = (props) => {
@@ -9,6 +10,7 @@ const Accordion = (props) => {
         <p className="accordion__title">
           {props.title}
         </p>
+        <Chevron width={10} fill={"#fefefe"} />
       </button>
       <div className="accordion__content">
         <Form />

@@ -4,9 +4,8 @@ import LandingImage from './components/LandingImage/LandingImage';
 import RtButton from './components/RtButton/RtButton';
 import Headline from './components/Headline/Headline';
 import Iframe from './components/Iframe/Iframe';
+import MainText from './components/MainText/MainText';
 import Accordion from './components/Accordion/Accordion';
-import {faCheckCircle} from "@fortawesome/free-regular-svg-icons";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import Footer from './components/Footer/Footer';
 
 function LandingPage() {
@@ -29,17 +28,8 @@ function LandingPage() {
       </div>
         <div className="item3">
         <Headline />
-        <Iframe url="https://youtu.be/RGCNW2KOtIE" />
-        <table>
-          <tr>
-            <td>
-            <FontAwesomeIcon icon={faCheckCircle}/> Rim AND Disc brake compatible</td>
-            <td>
-            <FontAwesomeIcon icon={faCheckCircle}/> 15 or 20 Mph Top Speed</td>
-            <td>
-            <FontAwesomeIcon icon={faCheckCircle}/> Up to 50km Range</td>
-          </tr>
-        </table>
+        <Iframe url="https://www.youtube.com/embed/KEgxcv-NAzY" /> 
+        <MainText />
         </div>
         <div className="item4">
         <h2>Order today for 50% off price</h2>
