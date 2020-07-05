@@ -1,0 +1,134 @@
+@import "../../constants.scss";
+
+a {
+  text-decoration: none;
+}
+
+form {
+  padding: 0.875em 1.875em 1.875em;
+  background: $backdropColor;
+  border-radius: 0.5em;
+}
+
+fieldset,
+legend,
+button {
+  padding: 0;
+  border: none;
+}
+
+fieldset {
+  color: $titleColor;
+  margin-top: 1.5em;
+}
+
+legend,
+button {
+  font-size: 1.25em;
+}
+
+legend {
+  font-weight: 500;
+  padding-top: 0.5em;
+  border-top: 2px solid $neutralColor;
+  margin-bottom: 1.125em;
+}
+
+input[type="text"],
+input[type="email"],
+legend {
+  width: 100%;
+}
+
+label {
+  color: $titleColor;
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+input,
+select {
+  margin-bottom: 1.125em;
+}
+
+input {
+  font-size: 1em;
+  font-weight: 500;
+  padding: 0.8em;
+  background: $neutralColor;
+  border: 2px solid $hoverColor;
+  border-radius: 0.5em;
+  outline: none;
+}
+
+input:focus {
+  border-color: $highlightColor;
+  transition: border-color 0.4s, background-color 0.4s;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline-block;
+}
+
+button {
+  color: $neutralColor;
+  padding: 0.55em 1.25em;
+  background: $highlightColor;
+  border-radius: 0.5em;
+  margin: 1.25em 0 0.5em;
+  cursor: pointer;
+}
+
+button:hover {
+  @include grow;
+}
+
+/* ================================= 
+  Page Styles
+==================================== */
+
+.container {
+  margin: auto;
+  max-width: 680px;
+}
+
+.shirt div {
+  float: left;
+  margin-right: 0.85em;
+}
+
+.interests input {
+  margin-bottom: 0;
+}
+
+.credit-card {
+  margin-top: 1.25em;
+}
+
+.error {
+  color: #ad2d0d;
+}
+
+/* ================================= 
+  Helper Classes
+==================================== */
+.select-msg {
+  color: #34587c;
+}
+
+.total-calc {
+  color: #1a3652;
+  font-size: 1.25em;
+  padding: 0.2em;
+}
+
+.is-hidden {
+  display: none;
+}
+
+.clearfix::after {
+  content: " ";
+  display: table;
+  clear: both;
+}

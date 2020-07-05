@@ -1,9 +1,12 @@
 @import "../../constants";
 .rtBtn__positioner {
+  position: relative;
   @include atSmall {
-    position: relative;
     width: 100vw;
     height: 5vh;
+  }
+  @include atMedium {
+    height: 10vh;
   }
 }
 

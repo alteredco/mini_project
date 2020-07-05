@@ -3,7 +3,7 @@ import Nav from './components/NavTop/NavTop';
 import LandingImage from './components/LandingImage/LandingImage';
 import RtButton from './components/RtButton/RtButton';
 import Footer from './components/Footer/Footer';
-import Form from './components/Form/Form';
+import Accordion from './components/Accordion/Accordion';
 import {faCheckCircle} from "@fortawesome/free-regular-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import Headline from './components/Headline/Headline';
@@ -44,6 +44,7 @@ function LandingPage() {
         <h1>£399</h1>
         </div>
         <div className="item5">
+        <Accordion title=" PAYMENT " />
          </div>
          </div>
          </main>
