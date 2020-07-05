@@ -41,7 +41,7 @@ const Form =()=>{
             <option value="9">9 - September</option>
             <option value="10">10 - October</option>
             <option value="11">11 - November</option>	
-            <option value="12">12 - December</option>          		          
+            <option value="12">12 - December</option>                
           </select>
           <label for="exp-year">Expiration Year:</label>
           <select id="exp-year" name="user_exp-year">
@@ -54,7 +54,7 @@ const Form =()=>{
           <div>
             <label for="cvv">Cardholder Name:</label>
             <input id="cardholder" name="cardholder" type="text"/> 
-          </div>	                  	         
+          </div>	                       
         </div>          
       </fieldset>        
       <Link to={'/paid'}>

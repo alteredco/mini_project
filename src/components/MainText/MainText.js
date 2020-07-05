@@ -8,7 +8,7 @@ const MainText = ()=> {
               <table>
           <tr>
             <td>
-            <CircleCheck/> Rim AND Disc brake compatible</td>
+            <CircleCheck /> Rim AND Disc brake compatible</td>
             <td>
             <CircleCheck/> 15 or 20 Mph Top Speed</td>
             <td>
