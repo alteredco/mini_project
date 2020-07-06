@@ -8,6 +8,17 @@
   }
 }
 
+.main--headline__container {
+  &img {
+    @include atSmall {
+      max-width: $mobileWidth;
+    }
+    @include atMedium {
+      max-width: ($mobileWidth/2);
+    }
+  }
+}
+
 .main--purchase__container {
   margin: 1em;
 }

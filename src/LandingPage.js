@@ -3,7 +3,6 @@ import Nav from './components/NavTop/NavTop';
 import LandingImage from './components/LandingImage/LandingImage';
 import RtButton from './components/RtButton/RtButton';
 import Headline from './components/Headline/Headline';
-import Iframe from './components/Iframe/Iframe';
 import MainText from './components/MainText/MainText';
 import Deal from './components/Deal/Deal';
 import Accordion from './components/Accordion/Accordion';
