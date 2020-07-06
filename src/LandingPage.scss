@@ -8,14 +8,15 @@
   }
 }
 
-.main--headline__container {
-  &img {
-    @include atSmall {
-      max-width: $mobileWidth;
+.main--headline__imgContainer {
+  @include atSmall {
+    max-width: $mobileWidth;
+    &img {
+      width: 95vw;
     }
-    @include atMedium {
-      max-width: ($mobileWidth/2);
-    }
+  }
+  @include atMedium {
+    max-width: ($mobileWidth/2);
   }
 }
 

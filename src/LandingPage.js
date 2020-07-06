@@ -31,7 +31,9 @@ function LandingPage() {
        />
         <div className="main--headline__container">
         <Headline />
+        <div className="main--headline__imgContainer">
         <img src={KitImg} alt="swytch conversion kit"/>
+        </div>
         </div>
         </div>
         </section>
