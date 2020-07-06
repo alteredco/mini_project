@@ -8,7 +8,8 @@ Initial Figma file here: https://www.figma.com/file/dpuoDMH5bLkM0QrCUJNB37/Untit
 
 This is an all-in-one crowdfunding and purchase page, with single click purchase for the Universal eConversion Kit, created as a React app. <br/>
 For those deciding to purchase there is FOMO motivation provided by a deal countdown timer and limiteded availablity pressure. These elements are set up to be reset easily in the LandingPage as props. <br />
-The website is mobile and desktop friendly, utilising a combination of CSS Grid, Flexbox, and custom Sass media queries to improve responsiveness.
+The website is mobile and desktop friendly, utilising a combination of CSS Grid, Flexbox, and custom Sass media queries to improve responsiveness.<br />
+Upon clicking the purchase button the customer is taken to a confirmation page wit links to the main website and swytch social channels.
 
 ## Available Scripts
 
