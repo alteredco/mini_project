@@ -1,6 +1,7 @@
 @import "./constants.scss";
 
 .main__container {
+  margin-bottom: 4vh;
   @include fade-in;
   &h1 {
     color: $titleColor;
