@@ -10,13 +10,17 @@
 
 .main--headline__imgContainer {
   @include atSmall {
-    max-width: $mobileWidth;
-    &img {
-      width: 95vw;
-    }
+    max-width: 95vw;
   }
   @include atMedium {
-    max-width: ($mobileWidth/2);
+    max-width: 45vw;
+  }
+  & img {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0.5em;
   }
 }
 
