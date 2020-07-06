@@ -1,4 +1,5 @@
 @import "./constants.scss";
+
 .App {
   background-color: $neutralColor;
   min-height: $pageHeight;
@@ -7,4 +8,7 @@
   position: relative;
   align-items: center;
   text-align: center;
+  &h1 {
+    color: $titleColor;
+  }
 }

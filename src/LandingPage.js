@@ -5,7 +5,7 @@ import RtButton from './components/RtButton/RtButton';
 import Headline from './components/Headline/Headline';
 import Iframe from './components/Iframe/Iframe';
 import MainText from './components/MainText/MainText';
-import Card from './components/Card/Card';
+import Deal from './components/Deal/Deal';
 import Accordion from './components/Accordion/Accordion';
 import Footer from './components/Footer/Footer';
 import Countdown from './components/Countdown/Countdown';
@@ -37,19 +37,21 @@ function LandingPage() {
         </section>
         <section className="main--purchase__container">
         <MainText />
-        <Card />
+        <Deal />
         <Countdown endDate="2020-08-01" />
         </section>
         <section className="main--payment__container" id="scrollTarget">
-        <Accordion title=" PAYMENT "
-         />
+        <Accordion title=" PAYMENT "/>
          </section>
-         <section className="main--gallery__container row">
+         <section className="main--gallery__container">
+         <h2>How It Works </h2>
+         <div className="row">
            <div className="col-1-of-2">
             <Iframe url="https://www.youtube.com/embed/KEgxcv-NAzY"></Iframe>
            </div>
            <div className="col-1-of-2">
            <Iframe url="https://www.youtube.com/embed/RGCNW2KOtIE"></Iframe>
+           </div>
            </div>
          </section>
          </main>
