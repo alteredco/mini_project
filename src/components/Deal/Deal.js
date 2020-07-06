@@ -1,6 +1,7 @@
 import React from 'react';
+import './Deal.scss';
 
-const Card = () => {
+const Deal = () => {
   return (
   <section className="deal__container">
     <h2>Order today for 50% off price</h2>
@@ -9,4 +10,4 @@ const Card = () => {
   );
 }
 
-export default Card;
+export default Deal;

@@ -12,17 +12,6 @@
   margin: 1em;
 }
 
-.main--gallery__container {
-  margin-top: 1vh;
-  padding-bottom: 9vh;
-  @include atSmall {
-    margin-bottom: 4vh;
-  }
-  @include atMedium {
-    margin-bottom: 9vh;
-  }
-}
-
 footer {
   position: fixed;
   bottom: 0;

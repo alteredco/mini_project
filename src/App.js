@@ -9,8 +9,8 @@ function App() {
   return (
     <div className="App">
     <Switch>
-      <Route path="/" component={LandingPage} exact />
-      <Route path="/paid" component={PaidPage} />
+      <Route  path="/" component={LandingPage} exact />
+      <Route  path="/paid" component={PaidPage} />
     </Switch>
     </div>
   );

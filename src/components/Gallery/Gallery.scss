@@ -7,9 +7,6 @@
   }
   @include atSmall {
     margin-bottom: 1em;
-    &iframe {
-      margin-bottom: 1em;
-    }
   }
   @include atMedium {
     margin-bottom: 1em;

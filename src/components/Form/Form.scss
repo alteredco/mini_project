@@ -1,9 +1,5 @@
 @import "../../constants.scss";
 
-a {
-  text-decoration: none;
-}
-
 form {
   padding: 0.875em 1.875em 1.875em;
   background: $backdropColor;
@@ -92,12 +88,4 @@ button {
 
 .credit-card {
   margin-top: 1.25em;
-}
-
-.error {
-  color: #ad2d0d;
-}
-
-.select-msg {
-  color: #34587c;
 }
