@@ -11,6 +11,7 @@ import Footer from './components/Footer/Footer';
 import Countdown from './components/Countdown/Countdown';
 import KitImg from './assets/kit_1.jpg';
 import './LandingPage.scss';
+import Gallery from './components/Gallery/Gallery';
 
 function LandingPage() {
   return(
@@ -44,15 +45,7 @@ function LandingPage() {
         <Accordion title=" PAYMENT "/>
          </section>
          <section className="main--gallery__container">
-         <h2>How It Works </h2>
-         <div className="row">
-           <div className="col-1-of-2">
-            <Iframe url="https://www.youtube.com/embed/KEgxcv-NAzY"></Iframe>
-           </div>
-           <div className="col-1-of-2">
-           <Iframe url="https://www.youtube.com/embed/RGCNW2KOtIE"></Iframe>
-           </div>
-           </div>
+         <Gallery />
          </section>
          </main>
         <footer>

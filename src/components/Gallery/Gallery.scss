@@ -1,0 +1,17 @@
+@import "../../constants.scss";
+
+.gallery__container {
+  margin-top: 1vh;
+  &h2 {
+    padding: 1em;
+  }
+  @include atSmall {
+    margin-bottom: 1em;
+    &iframe {
+      margin-bottom: 1em;
+    }
+  }
+  @include atMedium {
+    margin-bottom: 1em;
+  }
+}

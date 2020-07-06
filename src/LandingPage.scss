@@ -12,11 +12,9 @@
   margin: 1em;
 }
 
-.main--purchase__title {
-  color: $titleColor;
-}
-
 .main--gallery__container {
+  margin-top: 1vh;
+  padding-bottom: 9vh;
   @include atSmall {
     margin-bottom: 4vh;
   }
